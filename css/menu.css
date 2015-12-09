@@ -1,0 +1,46 @@
+.menu,
+.menu ul,
+.menu ul li,
+.menu ul li a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    line-height: 1;
+    display: block;
+    position: relative;
+    font-size: 15px;
+    font-family: Century Gothic, Helvetica, sans-serif;
+}
+
+.menu {
+    width: 100%;
+    height: 48px;
+    background-color:black;
+}
+
+.menu ul li {
+    float: left;
+    margin-right: 4px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    z-index: 5;
+}
+
+.menu ul li a {
+    padding: 20px 30px 5px 30px;
+    margin-bottom: 4px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    color: #eeeeee;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.menu ul li a:hover{
+  background: #ffffff;
+}
+
+.menu ul li a:hover{
+  color: grey;
+}

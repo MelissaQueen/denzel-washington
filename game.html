@@ -1,0 +1,104 @@
+<!doctype html public>
+<html lang="eng">
+<head>
+	<title>Game</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+	<link rel="stylesheet" type="text/css" href="css/game.css">
+	<script type="text/javascript" src="script/game.js"></script>
+</head>
+<body>
+	<div class="header">
+		<div class="menu">
+			<ul>
+				<li><a href="index.html">Denzel Washington</a></li>
+				<li><a href="biography.html">Biography</a></li>
+				<li><a href="movielist.html">Top 10 Movies</a></li>
+				<li><a href="awards.html">Awards</a></li>
+				<li><a href="game.html">Game</a></li>
+				<li><a href="filmography.html">Filmography</a></li>
+				<li><a href="trailers.html">Trailers</a></li>
+				<li><a href="documentation.html">Documentation</a></li>
+			</ul>
+		</div>
+  		<div class = "left">
+  	 		<font color=white>Denzel</font> <font color=grey>Washington.</font>
+  		</div>
+	</div>
+	<br><br>
+	<div class = "center">
+		<form onsubmit="calculateScore()">
+			Which movies did Denzel Washington star in?
+			<div class="answers">
+				<div class="options">
+					<label><input type="checkbox" name="answer-question1" value="The-departed">The Departed</label>
+				</div>
+				<div class="options">
+					<label><input type="checkbox" name="answer-question1" value="American-sniper">American Sniper</label>
+				</div>
+				<div class="options">
+					<label>	<input type="checkbox" name="answer-question1" value="Man-on-fire">Man on fire</label>
+				</div>
+				<div class="options">
+					<label>	<input type="checkbox" name="answer-question1" value="2-guns">2 Guns</label>
+				</div>
+				<br>
+			</div>
+			What year was Denzel Washington Born?
+			<div class="answers">
+				<div class="options">
+					<label><input type="radio" name="radAnswer-question2" value="1940">1940</label>
+				</div>
+				<div class="options">
+					<label><input type="radio" name="radAnswer-question2" value="1954" >1954</label>
+				</div>
+				<div class="options">
+					<label><input type="radio" name="radAnswer-question2" value="1959">1959</label>
+				</div>
+			</div>
+			What month was Denzel Washington born?
+			<div class="answers">
+				<div class="options">
+					<label><input type="radio" name="radAnswer-question3" value="Dec">December</label>
+				</div>
+				<div class="options">
+					<label><input type="radio" name="radAnswer-question3" value="July">July</label>
+				</div>
+				<div class="options">
+					<label><input type="radio" name="radAnswer-question3" value="April">April</label>	
+				</div>
+			</div>
+			What was the most recent film he starred in?
+			<div class="answers">
+				<div class="options">
+					<input type="radio" name="radAnswer-question4" value="2Guns">2 Guns</label>	
+				</div>
+				<div class="options">
+					<input type="radio" name="radAnswer-question4" value="Safe-House">SafeHouse</label>	
+				</div>
+				<div class="options">
+					<input type="radio" name="radAnswer-question4" value="The-Equalizer">The Equalizer</label>
+				</div>
+			</div>
+			Can you guess the movie from the soundtrack?
+			<div class="answers">
+				<audio controls>
+					<source src="audio/filmSoundtrack.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+				</audio>
+				<br>
+				<select id="soundtrackSelect">
+					<option value="The-hurricane">The Hurricane</option>
+					<option value="Deja-vu">Deja vu</option>
+					<option value="The-Equalizer">The Equalizer</option>
+				</select>
+			</div>
+			<br>
+			<label>Enter your first name:</label>
+			<input type="text" id="user" name="user">
+			<br><br>
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+</body>
+</html>
